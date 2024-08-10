@@ -111,6 +111,10 @@ header a.active {
   margin: 1rem;
 }
 
+.content p {
+    text-align: justify;
+}
+
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
