@@ -111,8 +111,9 @@ header a.active {
   margin: 1rem;
 }
 
-.content p {
+.content {
     text-align: justify;
+    font-size: large;
 }
 
 @media screen and (max-width: 500px) {
