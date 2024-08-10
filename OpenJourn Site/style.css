@@ -114,6 +114,11 @@ header a.active {
 .content {
     text-align: justify;
     font-size: large;
+    margin: 40px 20%;
+}
+
+.content li {
+  margin: 10px 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -137,5 +142,9 @@ header a.active {
 
   .footer_links {
     text-align: center;
+  }
+
+  .content {
+    margin: 10%
   }
 }
