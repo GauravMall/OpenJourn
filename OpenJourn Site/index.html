@@ -6,7 +6,7 @@
     <title>OpenJourn</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="script"
+    <script type="module" src="script.js"></script>
   </head>
 
   <body class="content_holder">
@@ -24,12 +24,19 @@
 
       <label for="input-file" id="drag-drop-area">
         <input type="file" accept="application/pdf" id="input-file" hidden>
-        <div id="img-view">
-          <img src="images/upload_icon.png" alt="Upload Icon">
-          <p>Drag and drop or click here<br>to upload PDF file</p>
-          <span>Upload any journal article</span>
+        <div id="img-container">
+          <img src="images/upload_icon.png" alt="Upload Icon" id="img-view">
+          <p id="file-name">Drag and drop or click here<br>to upload PDF file</p>
+          <span>Select any PDF file</span>
         </div>
       </label>
+
+      <div id="query-area">
+        <h2>Enter any question you might have:</h2>
+        <textarea placeholder="Type any questions you have" id="" required></textarea>
+      </div>
+
+      <button id="generate-btn">Generate Report</button>
     </main>
 
     <footer>
@@ -46,7 +53,5 @@
         <p>© 2024 Copyright Reserved</p>
       </div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>

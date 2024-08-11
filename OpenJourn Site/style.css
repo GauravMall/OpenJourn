@@ -122,6 +122,10 @@ header a.active {
   margin: 10px 0;
 }
 
+p {
+  overflow-wrap: anywhere;
+}
+
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
