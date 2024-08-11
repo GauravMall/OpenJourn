@@ -141,10 +141,10 @@
           Gemini AI models that means two things:
           <ul>
             <li>
-              The prompts that are used to get responses from Google Gemini must
-              be continually updated in a way that ensures that OpenJourn lies
-              true to it's principles as listed in this Preliminary
-              Considerations section.
+              The prompts and model instructions that are used to get responses
+              from Google Gemini must be continually updated in a way that
+              ensures that OpenJourn lies true to it's principles as listed in
+              this Preliminary Considerations section.
             </li>
             <li>Rely on the model's accuracy and intelligence.</li>
           </ul>
@@ -169,8 +169,8 @@
           articles. Providing users with detailed explanations of how
           evaluations are conducted will enhance transparency and allow users to
           make informed judgments about the assessments. For this reason the
-          prompts that are used to build the AI model's responses are to be made
-          pubclicly available.
+          prompts and model instructions that are used to build the AI model's
+          responses are to be made pubclicly available.
         </li>
         <li>
           <b>User Feedback Mechanism</b>: Incorporating a feedback mechanism
@@ -263,7 +263,8 @@
         Having set out the goals for this project and the principles that the
         final result should adhere to, now we can design OpenJourn. The project
         is composed of a website, the current one. The home page offers the user
-        to input either a PDF file of or a DOI link for the journal article.
+        to upload the PDF of a journal article. Since this project aspires to be
+        as open to the public as possible DOI link inputs are disregarded.
         There's also a textbox where the user can optionally insert any
         questions he has about the journal article, i.e. "Is this article about
         vaccine efficacy prove that vaccines are bad for human health or is it
@@ -272,14 +273,14 @@
 
       <p>
         When the user clicks the "Tell me" button, the PDF file is passed onto
-        Google Gemini. If the article is publicly available, then the PDF file
-        is acquired from its DOI link and the same process happens. It should be
-        noted that no user identification/authentication is required.
+        Google Gemini. It should be noted that no user
+        identification/authentication is required.
       </p>
 
       <p>
-        After Google Gemini processes the article according to the prompt that
-        is explained and listed bellow, the page shows two things. One is the
+        After Google Gemini processes the article according to the prompt and
+        model instructions that is explained and listed bellow, the page shows
+        two things. One is the
         <i>OpenJourn Report</i> for the journal article, where the article is
         graded and evaluated according to the criteria listed bellow. The second
         is the answer to the query the user made.
@@ -392,7 +393,7 @@
 
       <h2>Judging Criteria</h2>
       <p>
-        Since the prompt that is going to be used to get responses from Google
+        Since the prompt and model instructions that is going to be used to get responses from Google
         Gemini is ever changing, I thought it was useful to list the general
         criteria with which the assessment should be made.
       </p>
@@ -1673,12 +1674,21 @@
         </li>
       </ul>
 
-      <h2>Current Prompt</h2>
+      <h2>Current Model Instructions</h2>
       <p>
-        This is where the prompt used to currently derive results from Google
-        Gemini is listed. Previous versions can be accessed through GitHub
-        together with their deprecation notes (explanation as to why previous
-        versions were retired).
+        This is where the model instructions used to currently derive results
+        from Google Gemini is listed. This project uses Google Gemini 1.5 Flash.
+        Previous versions can be accessed through GitHub together with their
+        deprecation notes (explanation as to why previous versions were
+        retired).
+      </p>
+
+      <p>
+        The link to the GitHub file:
+        <a
+          href="https://github.com/GauravMall/OpenJourn/blob/main/model_instructions.txt"
+          >OpenJourn Model Instructions</a
+        >.
       </p>
 
       <h2>Conclusion</h2>
