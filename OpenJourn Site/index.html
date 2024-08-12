@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OpenJourn</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" src="script.js"></script>
   </head>
 
   <body class="content_holder">
@@ -18,7 +20,28 @@
     </header>
 
     <main class="content">
-      <h1>Home</h1>
+      <h1>Upload Journal Article</h1>
+
+      <label for="input-file" id="drag-drop-area">
+        <input type="file" accept="application/pdf" id="input-file" autocomplete="off" hidden/>
+        <div id="img-container">
+          <img src="images/upload_icon.png" alt="Upload Icon" id="img-view" />
+          <p id="file-name">
+            Drag and drop or click here<br />to upload PDF file
+          </p>
+          <span>Select any PDF file</span>
+        </div>
+      </label>
+
+      <div id="query-area">
+        <h2>Enter any question you might have:</h2>
+        <textarea
+          placeholder="Type any questions you have"
+          required
+        ></textarea>
+      </div>
+
+      <button id="generate-btn">Generate Report</button>
     </main>
 
     <footer>

@@ -64,8 +64,8 @@ header a {
 }
 
 footer a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 header a:hover {
@@ -74,12 +74,12 @@ header a:hover {
 }
 
 header .logo:hover {
-    background-color: rgb(255, 87, 34);
-    color: #f1f1f1;
+  background-color: rgb(255, 87, 34);
+  color: #f1f1f1;
 }
 
 footer a:hover {
-    color: black;
+  color: black;
 }
 
 header a.active {
@@ -109,16 +109,21 @@ header a.active {
 .content {
   flex: 1;
   margin: 1rem;
-}
-
-.content {
-    text-align: justify;
-    font-size: large;
-    margin: 40px 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  font-size: large;
+  margin: 40px 20%;
 }
 
 .content li {
   margin: 10px 0;
+}
+
+p {
+  overflow-wrap: anywhere;
 }
 
 @media screen and (max-width: 500px) {
@@ -145,6 +150,6 @@ header a.active {
   }
 
   .content {
-    margin: 10%
+    margin: 10%;
   }
 }

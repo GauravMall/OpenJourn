@@ -1,0 +1,147 @@
+#drag-drop-area {
+  width: 50%;
+  height: auto;
+  padding: 40px;
+  background: rgb(255, 87, 34);
+  text-align: center;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+#query-area {
+  width: 50%;
+  height: auto;
+  padding: 40px;
+  background: rgb(255, 87, 34);
+  text-align: center;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+#img-container {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 2px dashed rgb(255, 87, 34);
+  background: rgb(255, 233, 226);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+#img-container p {
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+
+#img-container img {
+  width: 100px;
+  margin-top: 25px;
+}
+
+#img-container p {
+  color: rgb(255, 87, 34);
+  font-size: 20px;
+}
+
+#img-container span {
+  color: #777;
+  font-size: 16px;
+  padding: 15px 0px;
+}
+
+#query-area textarea {
+  width: 100%;
+  height: 59px;
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  border-color: rgb(210, 229, 233);
+  font-family: Bahnschrift;
+  box-sizing: border-box;
+  scrollbar-width: none;
+  field-sizing: content;
+}
+
+#query-area textarea:is(:focus, :valid) {
+  border-color: #4458b1;
+  border-width: 2px;
+  padding: 14px;
+}
+
+#query-area h2 {
+  color: white;
+  margin: 0px 0px 15px 0px;
+}
+
+#generate-btn {
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+  font-size: large;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#generate-btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 87, 34);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+/* glow */
+#generate-btn::before {
+  content: "";
+  background: rgb(255, 87, 34);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* hover */
+#generate-btn:hover::before {
+  opacity: 1;
+}
+
+#generate-btn:active:after {
+  background: transparent;
+}
+
+#generate-btn:active {
+  color: white;
+}
