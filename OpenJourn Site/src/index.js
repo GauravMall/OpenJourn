@@ -1,7 +1,7 @@
 const dropArea = document.getElementById("drag-drop-area");
 const inputFile = document.getElementById("input-file");
 const imgView = document.getElementById("img-view");
-const imgContaienr = document.getElementById("img-container");
+const imgContainer = document.getElementById("img-container");
 
 const queryInput = document.querySelector("textarea");
 
@@ -22,7 +22,7 @@ dropArea.addEventListener("drop", (e) => {
 });
 
 function changePDFStatus() {
-  imgView.src = "images/file_pdf.png";
+  imgView.src = "../public/images/file_pdf.png" ;
   fileName.innerText = inputFile.files[0].name;
 }
 
@@ -38,6 +38,6 @@ generateBtn.addEventListener("click", (e) => {
 
   if (file != undefined) {
     //Send data to AI
-    console.log("Sending data to AI");
+    console.log("Sending data in a bit to AI");
   }
 });
