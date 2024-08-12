@@ -1,0 +1,22 @@
+{
+  "name": "openjourn",
+  "version": "1.0.0",
+  "description": "An evaluation framework for journal articles based on Google Gemini.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GauravMall/OpenJourn.git"
+  },
+  "author": "Gaurav Mall Tarlok",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/GauravMall/OpenJourn/issues"
+  },
+  "homepage": "https://github.com/GauravMall/OpenJourn#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.16.0"
+  }
+}
