@@ -23,7 +23,13 @@
       <h1>Upload Journal Article</h1>
 
       <label for="input-file" id="drag-drop-area">
-        <input type="file" accept="application/pdf" id="input-file" autocomplete="off" hidden/>
+        <input
+          type="file"
+          accept="application/pdf"
+          id="input-file"
+          autocomplete="off"
+          hidden
+        />
         <div id="img-container">
           <img src="images/upload_icon.png" alt="Upload Icon" id="img-view" />
           <p id="file-name">
@@ -35,13 +41,12 @@
 
       <div id="query-area">
         <h2>Enter any question you might have:</h2>
-        <textarea
-          placeholder="Type any questions you have"
-          required
-        ></textarea>
+        <textarea placeholder="Type any questions you have" required></textarea>
       </div>
 
       <button id="generate-btn">Generate Report</button>
+
+      <div id="report-area"></div>
     </main>
 
     <footer>
