@@ -1,3 +1,5 @@
+import { GoogleGenerativeAI } from "@google/generative-ai";
+
 const dropArea = document.getElementById("drag-drop-area");
 const inputFile = document.getElementById("input-file");
 const imgView = document.getElementById("img-view");
