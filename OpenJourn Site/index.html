@@ -23,17 +23,22 @@
       <h1>Upload Journal Article</h1>
 
       <label for="input-file" id="drag-drop-area">
-        <input type="file" accept="application/pdf" id="input-file" hidden>
+        <input type="file" accept="application/pdf" id="input-file" autocomplete="off" hidden/>
         <div id="img-container">
-          <img src="images/upload_icon.png" alt="Upload Icon" id="img-view">
-          <p id="file-name">Drag and drop or click here<br>to upload PDF file</p>
+          <img src="images/upload_icon.png" alt="Upload Icon" id="img-view" />
+          <p id="file-name">
+            Drag and drop or click here<br />to upload PDF file
+          </p>
           <span>Select any PDF file</span>
         </div>
       </label>
 
       <div id="query-area">
         <h2>Enter any question you might have:</h2>
-        <textarea placeholder="Type any questions you have" id="" required></textarea>
+        <textarea
+          placeholder="Type any questions you have"
+          required
+        ></textarea>
       </div>
 
       <button id="generate-btn">Generate Report</button>
